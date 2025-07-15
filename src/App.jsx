@@ -4,6 +4,7 @@ import AllProducts from './pages/AllProducts'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import Login from './components/Login'
+import ProductsCategory from './pages/ProductsCategory'
 import { Toaster } from "react-hot-toast"
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { useAppContext } from './context/AppContext'
@@ -23,6 +24,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<AllProducts />} />
+          <Route path="/products/:category" element={<ProductsCategory />} />
         </Routes>
       </div>
 
