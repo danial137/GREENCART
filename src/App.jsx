@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import AllProducts from './pages/AllProducts'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import Login from './components/Login'
@@ -21,6 +22,7 @@ const App = () => {
       <div className={`${isSellerPath ? '' : 'px-6 md:px-16 lg:px-24 xl:px-32'}`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<AllProducts />} />
         </Routes>
       </div>
 
