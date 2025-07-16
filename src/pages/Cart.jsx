@@ -99,7 +99,7 @@ const Cart = () => {
                                 {addresses.map((address, index) => (<p onClick={() => { selectedAddress(address); setShowAddress(false) }} className="text-gray-500 p-2 hover:bg-gray-100">
                                     {address.street},{address.city},{address.state},{address.country}
                                 </p>))}
-                                <p onClick={() => navigate('/add-adress')} className="text-primary text-center cursor-pointer p-2 hover:bg-primary-dull">
+                                <p onClick={() => navigate('/add-address')} className="text-primary text-center cursor-pointer p-2 hover:bg-primary-dull">
                                     Add address
                                 </p>
                             </div>

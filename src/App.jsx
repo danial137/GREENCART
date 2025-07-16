@@ -10,6 +10,7 @@ import ProductDetails from './pages/ProductDetails'
 import { Toaster } from "react-hot-toast"
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { useAppContext } from './context/AppContext'
+import AddAddress from './pages/AddAddress'
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/products/:category" element={<ProductsCategory />} />
           <Route path="/products/:category/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/add-address" element={<AddAddress />} />
         </Routes>
       </div>
 
