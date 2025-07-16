@@ -83,12 +83,13 @@ export const AppContextProvider = ({ children }) => {
         let totalAmount = 0;
         for (const item in cartItems) {
             let itemInfo = products.find((product) => product._id === item);
-            if (cartItems[item] > 0) {
-                totalAmount += itemInfo.offerprice * cartItems[item];
+            if (itemInfo && cartItems[item] > 0) {
+                totalAmount += itemInfo.offerPrice * cartItems[item];
             }
         }
         return Math.floor(totalAmount * 100) / 100;
-    }
+    };
+
 
 
     useEffect(() => {
