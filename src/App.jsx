@@ -7,6 +7,7 @@ import Login from './components/Login'
 import ProductsCategory from './pages/ProductsCategory'
 import Cart from './pages/Cart'
 import ProductDetails from './pages/ProductDetails'
+import MyOrders from './pages/MyOrders'
 import { Toaster } from "react-hot-toast"
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { useAppContext } from './context/AppContext'
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/products/:category/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/add-address" element={<AddAddress />} />
+          <Route path="/my-orders" element={<MyOrders />} />
         </Routes>
       </div>
 
